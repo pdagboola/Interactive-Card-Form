@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left"><img src="/images/bg-main-desktop.png" alt="" /></div>
+      <div id="right" class="right">
+        <form id="form" class="form-container">
+          <label for="cardholder-name"
+            >CARDHOLDER NAME<input
+              id="cardholder-name"
+              type="text"
+              name="cardholder-name"
+          /></label>
+          <label for="card-number"
+            >CARD NUMBER<input id="card-number" type="text"
+          /></label>
+          <div class="exp-date">
+            <label class="label-exp" for="exp-date"
+              >EXP. DATE (MM/YY)
+              <div class="mm-yy">
+                <input id="mm" type="text" />
+                <input id="yy" type="text" /></div
+            ></label>
+            <label for="cvc">CVC<input type="number" id="cvc" /></label>
+          </div>
+          <button>Confirm</button>
+        </form>
+      </div>
+      <div class="card-front">
+        <img class="img-front" src="/images/bg-card-front.png" alt="" />
+        <img class="logo-card" src="/images/card-logo.svg" alt="" />
+        <div id="card-number-card" class="card-number-card h1">
+          <h1>0000 0000 0000 0000</h1>
+        </div>
+        <div id="name-exp" class="name-exp">
+          <p class="name-on-card">ABCDEFG HIJKL</p>
+        </div>
+        <div class="exp-dat">
+          <p id="mm-new" class="cvc-on-card mm">00/</p>
+          <p id="yy-new" class="yy">00</p>
+        </div>
+      </div>
+      <div class="card-back">
+        <img src="/images/bg-card-back.png" alt="" />
+        <p id="cvc-card" class="cvc-card">123</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

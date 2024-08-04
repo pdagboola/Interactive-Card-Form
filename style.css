@@ -1,0 +1,165 @@
+* {
+  font-family: "Space Grotesk";
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.main-container {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1440px;
+}
+.left {
+  height: 100vh;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.exp-date {
+  display: flex;
+  justify-content: ;
+}
+.mm-yy {
+  display: flex;
+}
+label {
+  display: flex;
+  flex-direction: column;
+}
+.logo-card {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+}
+.card-front,
+.card-back {
+  position: absolute;
+}
+.card-front {
+  top: 200px;
+  left: 280px;
+  box-shadow: rgba(17, 12, 46, 0.15);
+}
+.card-back {
+  top: 480px;
+  left: 350px;
+  box-shadow: rgba(17, 12, 46, 0.15);
+}
+button {
+  background-color: hsl(278, 68%, 11%);
+  border-style: none;
+  color: white;
+  width: 100%;
+}
+.card-number-card {
+  color: white;
+  position: absolute;
+  top: 100px;
+  left: 25px;
+}
+.name-exp {
+  position: absolute;
+  top: 180px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  left: 25px;
+}
+.card-number-card-new {
+  position: absolute;
+  width: 400px;
+  display: flex;
+}
+.name-exp-new {
+  display: flex;
+  gap: 230px;
+}
+.mm-new {
+  position: absolute;
+  top: 100px;
+}
+.exp-dat {
+  position: absolute;
+  color: white;
+  left: 350px;
+  top: 180px;
+  display: flex;
+}
+.cvc-card {
+  color: white;
+  position: absolute;
+  top: 95px;
+  left: 360px;
+}
+#mm,
+#yy {
+  width: 50px;
+}
+.label-exp {
+  width: 200px;
+}
+
+button {
+  border-radius: 5px;
+  height: 30px;
+  width: 390px;
+}
+.form-container-new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1440px) {
+  .card-back {
+    left: 250px;
+  }
+  .card-front {
+    left: 150px;
+  }
+  .form {
+    width: fit-content;
+  }
+  form label {
+    font-size: 12px;
+  }
+  button {
+    width: 100%;
+  }
+  .exp-date {
+    width: 100%;
+  }
+}
+@media (max-width: 1160px) {
+  .card-back {
+    left: 250px;
+  }
+  .card-front {
+    left: 150px;
+  }
+  .form {
+    width: fit-content;
+  }
+  form label {
+    font-size: 12px;
+  }
+  button {
+    width: 100%;
+  }
+  .exp-date {
+    width: 100%;
+  }
+}
